@@ -78,3 +78,14 @@ GRANT SELECT ON retail_db.customers_v TO 'analyticsx'@'localhost';
 REVOKE SELECT ON retail_db.customers_v FROM 'analyticsx'@'localhost';
 
 GRANT SELECT,DELETE,DROP ON retail_db.orders TO 'analyticsx'@'localhost';
+
+# REVOKE DROP PERMISSION
+REVOKE DROP ON retail_db.orders FROM 'analyticsx'@'localhost';
+
+
+### HOW TO DELETE A USER
+DROP USER 'analyticsx'@'localhost';
+
+###DBA 
+## CAN DROP/CREATE USER 
+## DBA CAN GRANT/REVOKE ACCESS
